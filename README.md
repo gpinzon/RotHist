@@ -1,0 +1,2 @@
+# RotHist
+./plot.sh
