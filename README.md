@@ -1,5 +1,5 @@
 REFUGEE 	[ Rotational historiEs oF yoUnG stEllar objEcts ]
-Tool for the analysis of global trends between disc timelifes and magnetic field strenghts with other stellar parameters.
+Tool for the analysis of global trends of rotation with magnetic fields and disc timelifes.
 
 Input : File "input.dat" containing :
 
