@@ -9,13 +9,7 @@ Col[3] Characteristic timescale for accretion in yr,
 Col[4] Magnetic field strenght in G
 
 
-Output : File "refugee.dat" containing 26 columns
+Output : File "refugee.dat" containing 26 columns describing the rotational track (mass-vsini) over the mass interval 0.1 - 7.0 Mo
 
 For running just type ./refugee.sh
 
-gapinzone@unal.edu.co
-July 1st, 2020
-
-
-
-https://github.com/gpinzon/REFUGEE 
