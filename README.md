@@ -50,4 +50,8 @@ contains only mass (Mo) vs equatorial velocity (km/s). This velocity is computed
 If you want to run just for one mass, you should use the source c file corresponding to desired mass which operates under initial conditions given by input.dat as well.
 
 
+_________________________________________________
+You can  run on https://mybinder.org/
+
+
 
