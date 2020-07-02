@@ -242,7 +242,7 @@ tail -1 output0.13 > last0.13
 
 cat last* > tmp
 cat tmp | awk '{print $16, $5 }' > refugee.dat
-rm tmp
+mv tmp OUT.dat
 
 echo " "
 echo "        "
