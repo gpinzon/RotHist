@@ -14,10 +14,38 @@ Col[4] Magnetic field strenght in G
 For running just type ./refugee.sh
 
 Output : File "OUT.dat" 
-containing 26 columns describing the rotational track (mass-vsini) over the mass interval 0.1 - 7.0 Mo
+containing 26 columns describing the rotational track  over the mass interval 0.1 - 7.0 Mo
+
+Col[1] t in Myr 
+Col[2] Angular frequency in solar units
+Col[3] The accretion rate in Mo / yr
+Col[4] Stellar radius (Siess+2000) in Ro
+Col[5] Equatorial rotational velocity in km/s
+Col[6] Stellar period in days
+Col[7] Convective turnover time ( Interpolated from Landin +2010 )
+Col[8] Trunctation radius (Ro)
+Col[9] Corotation radius (Ro)
+Col[10] Stellar wind torque (in cgs)
+Col[11] Accretion torque (in cgs)
+Col[12] Magnetic torque (in cgs)
+Col[13] Escape velocity (in cgs)
+Col[14] Inertia moment core (solar units)
+Col[15] Total torque ( in cgs)
+Col[16] Initial Mass (Mo)
+Col[17] Stellar mass (Mo)
+Col[18] Mass loss rate (Mo/yr)
+Col[19] dR*/dt (computed from Siess+2010)
+Col[20] dIc*/dt (computed from Siess+2010)
+Col[21] Mass loss rate (in cgs)
+Col[22] Stellar dipolar magnetic moment (cgs)
+Col[23] ksquare
+Col[24] Total torque ( incgs )
+Col[25] Magnetic field strength (G)
+Col[26] Alvén radius in solar units
+
 
 The file "refugee.dat" 
-contains only mass (mo) vs equatorial velocity (km/s). This velocity is computed at TFINAL (second column input file)
+contains only mass (Mo) vs equatorial velocity (km/s). This velocity is computed at TFINAL (second column input file)
 
 If you want to run just for one mass, you should use the source c file corresponding to desired mass which operates under initial conditions given by input.dat as well.
 
