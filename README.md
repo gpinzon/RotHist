@@ -51,8 +51,9 @@ If you want to run just for one mass, you should use the source c file correspon
 
 
 _________________________________________________
-You can  run simulations just typing ./refugee.sh on https://mybinder.org/
-Do not forget change permissions of the files before, using : chmod 777 refugee.sh 
+You can  run it on https://mybinder.org/
+Do not forget change permissions before using : chmod 777 refugee.sh 
+
 
 
 
