@@ -845,8 +845,9 @@ for(jota=1;jota<=12;jota++)
 
   }  /* end main time loop */
  printf("\n");
- printf(" ## computation was done succesfully ##  \n");
- printf(" ## please check the file output.dat ##  \n");
+ printf(" ## computation was done succesfully ##  \n");	
+ printf(" ## please check the file refugee.dat ##  \n"); 
+ printf(" ## for the mass-velocity diagram  ##  \n");
  printf("\n");
 
   
