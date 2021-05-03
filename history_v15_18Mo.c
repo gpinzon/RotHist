@@ -1,12 +1,12 @@
 /*
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%								       %%
-%% history_v15_18Mo.c						       %%
-%% ================						       %%
-%% Evolucion de la rotacion de estrellas de 1 Mo                     %%
-%% en su etapa previa a lasecuencia principal (hasta 5 Myr)            %%       
-%% -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.			       %%
-%% SEP 2016  						               %%
+%% Program : history_v15_18Mo.c      				       %%
+%% REFUGEE ( Rotational historiEs oF yoUnG stEllar objEcts )           %%
+%% -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-..-.-.-..-.-.-..-.-.-.-%%
+%% Rotation evolution for a young M*=1.80Mo star                       %%       
+%% -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-..-.-.-..-.-.-..-.-.-.-%%
+%% APR 2021  						               %%
 %% gapinzone@unal.edu.co                                               %%
 %%								       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1692,4 +1692,4 @@ float labolo(float jk)
 
 // End of the program
 // Giovanni Pinzon Estrada gapinzone@unal.edu.co
-// 2016
+// 2021
