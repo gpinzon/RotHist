@@ -1,12 +1,12 @@
 /*
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%								       %%
-%% history_v15_013Mo.c						       %%
-%% ================						       %%
-%% Evolucion de la rotacion de estrellas de 1 Mo                     %%
-%% en su etapa previa a lasecuencia principal (hasta 5 Myr)            %%       
-%% -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.			       %%
-%% SEP 2016  						               %%
+%% Program : history_v15_013Mo.c      				       %%
+%% REFUGEE ( Rotational historiEs oF yoUnG stEllar objEcts )           %%
+%% -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-..-.-.-..-.-.-..-.-.-.-%%
+%% Rotation evolution for a young M*=0.13Mo star                       %%       
+%% -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-..-.-.-..-.-.-..-.-.-.-%%
+%% APR 2021  						               %%
 %% gapinzone@unal.edu.co                                               %%
 %%								       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -20,12 +20,7 @@
 #include <ctype.h>
 #include <unistd.h>
 #define PRECISION 0.00001  /* in Sean's Rt/Rco Solver */
-//#define TEFF 4000.0        /* not used, tg used instead */
-//#define TACC 3e6   /* escala de tiempo de acrecion */
 #define macclimit 2e-14  /* lower limit to accretion rate in Msun/yr */
-//#define tg 5.17e15 /*  (44 Myr), Teff = 4277K, to "fit" Seiss model radii */
-//#define tg 3.15576e13
-//#define tg 1.4e15 /*  (44 Myr), Teff = 4277K, to "fit" Seiss model radii */
 #define WINDSTART 44.0 /*Myr*/ 
 #define omega_sat 8.0  /* (8.0 Barnes & Sofia 2001) */
 #define solarperiod 24.47/*Mean Rotation Period in days Mamajek */ 
@@ -89,10 +84,7 @@ int jj=1;
 FILE  *readt;  
 readt=fopen("input.dat","r");
 
-//  3 < endtt < 30 Myr 
-//  1 < tdeco  < 10           [i.e 10-100Myr]
-//  0.01 < masainidisk < 0.1Mo
-for(jj=1;jj<=1;jj++)
+	for(jj=1;jj<=1;jj++)
 
 {
 
@@ -103,21 +95,12 @@ fscanf(readt,"%f\t""%f\t""%f\t""%f\n",&endtt,&tfinalsim,&tdeco,&masainidisk);
   
   TFINAL=tfinalsim;
   
- // TFINAL=5.0;
-  
-  
- // TACC=3e6;
   taoc=1e7; /*taoc in yr*/
   BCERO=masainidisk;
        TACC=tdeco;  /* lee el archivo input y asigna TACC en y. (tercera columna input.dat)*/
 
 }
-
-
-
-   
-   
-   
+  
    
 FRAC=0.13;
  
@@ -130,16 +113,9 @@ FRAC=0.13;
   zeti = 3.25 ;  
  //tg =  58*3.15576e13;
   TEFF=2695.0;
-  
-  
-//tg=3.0*G*mui*mui*MSUN*MSUN / (28.0*PI*SIGMA*zeti*zeti*zeti*RSUN*RSUN*RSUN*pow(TEFF,4.0)) ;
- 
- //tg=(3e7*mui*MSUN/(4.0*PI*SIGMA*pow(TEFF,4.0)*pow(zeti*RSUN,2.0)*zeti/3.844e33))*NSA;
-//tg=(400e6)*NSA;
 
 tg=(1000e6)*NSA;
   
-  //tg=NSMA;
  modelspeed=calculin(MACC,mui,TFINAL,FINCTTS,taoc,BCERO,TACC,tg,zeti,TEFF, FRAC);
  
  printf("\n");
@@ -235,7 +211,7 @@ zona declaracion de variables  %%
 //subprograma labolo()
   readlabolo = fopen("labolo.txt","r"); 
 
-  
+
      
 /*
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1693,4 +1669,4 @@ float labolo(float jk)
 
 // End of the program
 // Giovanni Pinzon Estrada gapinzone@unal.edu.co
-// 2016
+// 2021
