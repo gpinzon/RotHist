@@ -1,7 +1,14 @@
 REFUGEE 	[ Rotational historiEs oF yoUnG stEllar objEcts ]
-Tool for the analysis of global trends between rotation and stellar parameters such as accretion, magnetic field strenghts, disc timelifes and stellar winds.
+Tool for the analysis of global trends between rotation and stellar
+parameters such as accretion, magnetic field strenghts, disc timelifes
+and stellar winds.
+README FILE
+==================================================================
 
-Input : File "input.dat" containing :
+
+Files in this directory:
+
+*Input : File "input.dat" containing :
 
 Col[1] Disk timelife in Myr,
 
@@ -10,6 +17,11 @@ Col[2]  End of simulations in Myr,
 Col[3] Characteristic timescale for accretion in yr,
 
 Col[4] Magnetic field strenght in G
+
+*Stellar Models (Siess+2000) in files :
+mXX.zo02.var1, mXX.zo02.var2, mXX.zo02.hrd, mXX.zo02.xsurf
+
+*other input files inside directory: 
 
 For running just type ./refugee.sh
 
