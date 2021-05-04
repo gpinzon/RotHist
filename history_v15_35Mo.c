@@ -1,17 +1,16 @@
 /*
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%								       %%
-%% history_v15_35Mo.c						       %%
-%% ================						       %%
-%% Evolucion de la rotacion de estrellas de 4 Mo                     %%
-%% en su etapa previa a lasecuencia principal (hasta 5 Myr)            %%       
-%% -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.			       %%
-%% SEP 2016  						               %%
+%% Program : history_v15_35Mo.c      				       %%
+%% REFUGEE ( Rotational historiEs oF yoUnG stEllar objEcts )           %%
+%% -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-..-.-.-..-.-.-..-.-.-.-%%
+%% Rotation evolution for a young M*=3.50Mo star                       %%       
+%% -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-..-.-.-..-.-.-..-.-.-.-%%
+%% APR 2021  						               %%
 %% gapinzone@unal.edu.co                                               %%
 %%								       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 */
-
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
@@ -1685,4 +1684,4 @@ float labolo(float jk)
 
 // End of the program
 // Giovanni Pinzon Estrada gapinzone@unal.edu.co
-// 2016
+// 2021
